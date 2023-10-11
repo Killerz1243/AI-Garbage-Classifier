@@ -43,8 +43,6 @@ def handle_stream(data):
     res = model.predict(img, verbose=0)
 
     emit('predictions', {'data': res[0].tolist()})
-# lol
-
 
 if __name__ == "__main__":
     socketio.run(app, debug=True)
