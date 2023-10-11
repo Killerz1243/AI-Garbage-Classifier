@@ -32,7 +32,7 @@ The AI Garbage Classifier operates in a real-time and interactive manner, allowi
   The AI Garbage Classifier is highly scalable and adaptable to different settings. It can be integrated into existing recycling and waste management infrastructures with ease. Whether you are running a small recycling facility or managing waste for an entire city, this AI can be implemented at various levels to enhance recycling efforts and sustainability.
 
 ## Setup
-
+Python 3.10 works best
 ### 1. Install required packages
    Begin by running the following command to install the necessary Python packages: `pip install -r requirements.txt`
 ### 2. Start the Server
