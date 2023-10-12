@@ -1,5 +1,5 @@
 # AI Garbage Classifier
-This AI Garbage Classifier is a powerful tool developed to identify and classify six types of materials commonly found in waste: Cardboard, glass, metal, paper, plastic, and trash. It has been trained on a diverse dataset, which can be found [here](https://www.kaggle.com/datasets/mostafaabla/garbage-classification).
+This AI Garbage Classifier is a powerful tool developed to identify and classify six types of materials commonly found in waste: Cardboard, glass, metal, paper, plastic, and trash. It has been trained on a diverse dataset, which can be found [here](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification/data).
 
 ## How does it work?
 
