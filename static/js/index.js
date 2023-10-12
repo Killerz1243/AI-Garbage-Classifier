@@ -6,11 +6,16 @@ let mediaStream;
 let socket;
 
 // Establish a WebSocket connection with the server
-socket = io.connect('http://' + document.domain + ':' + location.port);
+socket = io.connect('https://' + document.domain + ':' + location.port);
 
 async function startWebcam() {
     try {
-        mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
+        mediaStream = await navigator.mediaDevices.getUserMedia({
+            'audio': false,
+            'video': {
+                facingMode: 'environment'
+            }
+        });
         videoElement.srcObject = mediaStream;
 
         startCaptureFrames();
@@ -19,6 +24,7 @@ async function startWebcam() {
         stopButton.hidden = false;
     } catch (error) {
         console.error('Error accessing webcam:', error);
+        alert(`Error accessing webcam: ${error}`);
     }
 }
 
