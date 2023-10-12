@@ -1,9 +1,5 @@
-.progress {
-    height: 16px;
-}
-
 div.separate {
-    background-image: url('/static/images/tile2.png');
+    background-image: url('/static/images/tile.png');
     background-repeat:repeat-x;
     height:100px;
 } 
