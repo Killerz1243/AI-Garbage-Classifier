@@ -19,6 +19,10 @@ def index():
 def background():
     return render_template("background.html")
 
+# @socketio.on("message")
+# def message(data):
+#     print(data)
+
 @socketio.on("connect")
 def handle_connect():
     print("WebSocket connected")
@@ -44,5 +48,6 @@ def handle_stream(data):
 
     emit('predictions', {'data': res[0].tolist()})
 
+
 if __name__ == "__main__":
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', ssl_context='adhoc', debug=True)
